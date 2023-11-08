@@ -1,0 +1,1 @@
+find .  -iname 'a*' -o -type f  -iname "*z" -o -type f -iname "z*a"
