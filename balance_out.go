@@ -1,8 +1,6 @@
 package sprint
 
-
 var equalTrueAndFalse bool 
-
 func evaluateBalance(trueCount,falseCount int) bool {
 
 	if trueCount == falseCount {
@@ -10,7 +8,6 @@ func evaluateBalance(trueCount,falseCount int) bool {
 	}
 	return false
 }
-
 func BalanceOut(arr []bool) []bool {
 	var trueCount int
 	var falseCount int
@@ -21,13 +18,10 @@ func BalanceOut(arr []bool) []bool {
 		} else {
 			falseCount++
 		}
-	}
-	
+	}	
 for !evaluateBalance(trueCount,falseCount){
-
 	trueCount = 0
-	falseCount = 0
-	
+	falseCount = 0	
 	for _, value := range arr {
 		if value {
 			trueCount++
@@ -35,7 +29,6 @@ for !evaluateBalance(trueCount,falseCount){
 			falseCount++
 		}
 	}
-
 	if trueCount == falseCount {
 		// fmt.Printf("\n\n GOAL REACHED : %v \n\n",arr)
 	return arr
@@ -46,7 +39,6 @@ for !evaluateBalance(trueCount,falseCount){
 		arr = append(arr, false)
 		// fmt.Printf("added a  FALSE %v \n", arr)
 	}
-
 }
 
 	// fmt.Printf("\n End of loop array value : %v \n",arr)

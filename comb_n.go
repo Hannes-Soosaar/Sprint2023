@@ -11,7 +11,7 @@ func CombN(n int) []string {
 			return
 		}
 		for i := start; i <= 9; i++ {
-			backtrack(path+fmt.Sprintf("%d", i), i+1) // runs the anonymous funcstion passing in the value of i+1 to be saved 
+			backtrack(path+fmt.Sprintf("%d", i), i+1) // runs the anonymous funcstion passing in the value of i as the path to be saved 
 		}
 	}
 	backtrack("", 0)								// runs the backtrack function with 

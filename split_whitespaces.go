@@ -4,7 +4,6 @@ func SplitWhitespaces(s string) []string {
 	tempString := ""
 	resultStrinSlice := []string{}
 	for i, r := range s {
-
 		if r != '\t' && r != '\n' && r !=' '{
 			tempString += string(r)
 		}
