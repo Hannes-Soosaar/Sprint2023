@@ -23,7 +23,7 @@ func AdvancedSortWordArr(a []string, f func(a, b string) int) []string {
 		swapedAnElement = false
 		for i := 0; i < numberOfElementsInSlice-1; i++ { // iterates over the whole lenght of the table Slice members
 			for j := 0; j < numberOfElementsInSlice-1-i; j++ { // iterates over the whole lenght of the table if the last loop was completed than the next loop will be that much shorter
-				if f(a[j], a[j+1]) == 1 { // the value at index J is larger than the value at J + 1
+				if Compare(a[j], a[j+1]) == 1 { // the value at index J is larger than the value at J + 1
 					a[j], a[j+1] = a[j+1], a[j] // if we wanted to do this with two line we would need to use a temp variable
 					swapedAnElement = true
 				}
